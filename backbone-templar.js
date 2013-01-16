@@ -13,7 +13,7 @@
         storage : new Backbone.LocalStorage('Templar') // default local storage plugin
     };
 
-    var Templar = function( templatePaths, options ) {
+    Backbone.Templar = function( templatePaths, options ) {
         // if no options are passed
         var options           = ( typeof options === 'undefined' ) ? {} : options,
             templateExtension = ( options.ext ) ? options.ext : config.ext,
@@ -174,5 +174,5 @@
         }));  
     }  
 
-    return Templar;
+    Backbone.Templar;
 });
