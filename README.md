@@ -27,7 +27,7 @@ NOTE: This plugin is highly coupled with Handlebars at the moment, meaning I hav
     });
 
 
-### new Backbone.Templar.render(path, el, data [, append])
+### Backbone.Templar.render(path, el, data [, append])
   
   Render template...
 
