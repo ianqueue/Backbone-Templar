@@ -4,6 +4,8 @@ Backbone plugin to add a client side template manager.
 
 NOTE: This plugin is highly coupled with Handlebars at the moment, meaning I haven't done the work to create an interface around template compilation yet. I hope to make this more modular with other templating solutions soon.
 
+It also depends on Underscore, Backbone, jQuery and the Backbone-localStorage plugin written by [@jeromegn](https://github.com/jeromegn) which can be found here... https://github.com/jeromegn/Backbone.localStorage
+
 ## API
 
 ### new Backbone.Templar(templatePaths, options)
