@@ -77,7 +77,7 @@
                 var templates = this.localStorage.findAll();
 
                 // check for version change
-                if ( templates[0].version !== version ) {
+                if ( templates.length > 0 && templates[0].version !== version ) {
                     cache = false; // destroy cached versions and reload new version of templates
                 }
 
