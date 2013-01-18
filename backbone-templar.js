@@ -50,7 +50,7 @@
                     return {
                         path    : null,    
                         content : null,     // the stringified content of the template
-                        version : config.version
+                        version : version
                     };
                 },
 
