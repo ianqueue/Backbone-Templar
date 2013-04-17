@@ -25,14 +25,14 @@
         // -- public methods
         this.render = function( options ) {
             // set up defaults
-            if ( !options.path ) throw new Error('A template path is required.');
+            if ( !options.path ) throw 'A template path is required.';
             options.el = ( options.el ) ? options.el : document.body;
             TemplarCollection._render( options );
         }
 
         this.add = function() {
             // set up defaults
-            if ( !options.path ) throw new Error('A template path is required.');
+            if ( !options.path ) throw 'A template path is required.';
             TemplarCollection._add( options );
         }
 
@@ -174,5 +174,5 @@
         }));  
     }  
 
-    Backbone.Templar;
+    return Backbone.Templar;
 });
