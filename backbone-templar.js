@@ -133,7 +133,7 @@
                     this.add( templateModel );
                     this.create( templateModel.toJSON() );
                     
-                    if( typeof cb !== 'undefined' ) {
+                    if( typeof cb === 'function' ) {
                         cb();
                     }
                 }
@@ -149,7 +149,7 @@
                     el.html(compile(data));
                 }
                 // run a callback if provided through options.cb
-                if( typeof cb !== 'undefined' ) {
+                if( typeof cb === 'function' ) {
                     cb();
                 }
             },
